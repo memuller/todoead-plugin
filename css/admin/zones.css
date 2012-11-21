@@ -1,0 +1,2 @@
+.form-field:nth-of-type(3), .form-field:nth-of-type(4) { display: none; }
+.form-field p, .form-field span { width: 95%; max-width: 95%; }
