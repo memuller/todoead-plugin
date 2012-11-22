@@ -4,7 +4,7 @@
 	class Plugin {
 
 		static $db_version = 0.3 ;
-		static $custom_posts = array('Course', 'Lesson');
+		static $custom_posts = array('Course', 'Lesson', 'Sponsor');
 		static $custom_users = array('Teacher');
 		static $custom_classes = array();
 		static $custom_singles = array();
@@ -21,7 +21,7 @@
 		}
 
 		static function url($url){
-			return plugin_dir_url(dirname(__FILE__)). $url ;
+			return home_url().plugin_dir_url(dirname(__FILE__)). $url ;
 		}
 
 		static function build(){
