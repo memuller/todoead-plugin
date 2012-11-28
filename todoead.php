@@ -30,6 +30,7 @@
 	# Requires vendored libs and base structure.
 	require_once 'vendors/haml/HamlParser.class.php' ;
 	require_once 'vendors/recaptcha-php/recaptchalib.php';
+	if(!class_exists('BasePlugin')) require_once 'lib/BasePlugin.php' ;
 	if(!class_exists('Presenter')) require_once 'lib/Presenter.php' ;
 	if(!class_exists('BasePost')) require_once 'lib/BasePost.php' ;
 	if(!class_exists('DB_Object')) require_once 'lib/DB_Object.php' ;
