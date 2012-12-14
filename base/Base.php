@@ -5,7 +5,7 @@
 	class Plugin extends BasePlugin {
 
 		static $db_version = 0.3 ;
-		static $custom_posts = array('Course', 'Lesson', 'News', 'Sponsor');
+		static $custom_posts = array('Course', 'Lesson', 'News', 'Sponsor', 'Material', 'Question');
 		static $custom_users = array('Teacher');
 		static $custom_classes = array();
 		static $custom_singles = array();

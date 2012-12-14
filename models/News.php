@@ -12,7 +12,7 @@
 			'label' => 'news','description' => '',
 			'public' => true,'show_ui' => true,'show_in_menu' => true,'capability_type' => 'post',
 			'hierarchical' => false,'rewrite' => array('slug' => ''),'query_var' => true,
-			'supports' => array('custom-fields', 'title', 'thumbnail'), 'publicly_queryable' => true,
+			'supports' => array('custom-fields', 'title', 'thumbnail', 'editor'), 'publicly_queryable' => true,
 			'has_archive' => true, 'taxonomies' => array(),
 			'labels' => array (
 				'name' => 'Novidades',

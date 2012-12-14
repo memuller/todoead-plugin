@@ -1,5 +1,5 @@
 <?php
-	namespace CasaNova ;  
+	namespace TodoEAD ;  
 	use CustomPost ;
 
 	class Question extends CustomPost {
@@ -31,6 +31,7 @@
 			'text' => array('type' => 'rich_text'),
 			'answer' => array('type' => 'rich_text')
 		) ;
+
 		static $absent_actions = array('quick-edit', 'view');
 		
 		
@@ -41,7 +42,7 @@
 				$screen = get_current_screen() ; 
 				if($screen->post_type == $class::$name){
 					$question = new Question();
-					\CasaNova\Presenters\Base::render('admin/question/edit_form_advanced', array('question' => $question));
+					\TodoEAD\Presenters\Base::render('admin/question/edit_form_advanced', array('question' => $question));
 				}
 			}) ;
 

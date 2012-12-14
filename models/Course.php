@@ -6,7 +6,7 @@
 
 		static $name = "course" ;
 		static $editable_by = array(
-			'registration' => array('name' => 'Período de Inscrições', 'fields' => array('registration_start_date', 'registration_end_date', 'registration_enabled', 'registration_limit')),
+			'registration' => array('name' => 'Período de Inscrições', 'fields' => array('registration_start_date', 'registration_end_date',  'registration_limit')),
 			'info' => array('name' => 'Período Letivo', 'fields' => array('start_date', 'end_date', 'numberof_classes'))
 		);
 		static $creation_fields = array( 
@@ -22,7 +22,6 @@
 		) ;
 
 		static $fields = array(
-			'registration_enabled' => array('type' => 'boolean', 'label' => 'Habilitadas?', 'required' => true),
 			'registration_limit' => array('type' => 'integer', 'label' => 'Lotação', 'required' => true),
 			'registration_start_date' => array('type' => 'date', 'label' => 'Início', 'required' => true),
 			'registration_end_date' => array('type' => 'date', 'label' => 'Término', 'required' => true),

@@ -34,6 +34,10 @@
 							require 'fields/term_taxonomy.php';
 						break;
 
+						case 'file':
+							require 'fields/file.php' ;
+						break;
+
 						default:
 							require 'fields/default.php';	
 						break;
